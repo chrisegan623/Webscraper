@@ -17,42 +17,7 @@ def webscrape(url):
 
         male.append(text[0])
         female.append(text[1])
-        
-male = list()
-female = list()
-male1 = [line.strip() for line in open('male/male.txt', 'r')]
-male2 = [line.strip() for line in open('male/male2.txt', 'r')]
-male3 = [line.strip() for line in open('male/male3.txt', 'r')]
-male4 = [line.strip() for line in open('male/male4.txt', 'r')]
-male5 = [line.strip() for line in open('male/male5.txt', 'r')]
-male6 = [line.strip() for line in open('male/male6.txt', 'r')]
-male7 = [line.strip() for line in open('male/male7.txt', 'r')]
-male8 = [line.strip() for line in open('male/male8.txt', 'r')]
-male9 = [line.strip() for line in open('male/male9.txt', 'r')]
-male10 = [line.strip() for line in open('male/male10.txt', 'r')]
-male11 = [line.strip() for line in open('male/male11.txt', 'r')]
-male12 = [line.strip() for line in open('male/male12.txt', 'r')]
-
-female1 = [line.strip() for line in open('female/female.txt', 'r')]
-female2 = [line.strip() for line in open('female/female2.txt', 'r')]
-female3 = [line.strip() for line in open('female/female3.txt', 'r')]
-female4 = [line.strip() for line in open('female/female4.txt', 'r')]
-female5 = [line.strip() for line in open('female/female5.txt', 'r')]
-female6 = [line.strip() for line in open('female/female6.txt', 'r')]
-female7 = [line.strip() for line in open('female/female7.txt', 'r')]
-female8 = [line.strip() for line in open('female/female8.txt', 'r')]
-female9 = [line.strip() for line in open('female/female9.txt', 'r')]
-female10 = [line.strip() for line in open('female/female10.txt', 'r')]
-female11 = [line.strip() for line in open('female/female11.txt', 'r')]
-female12 = [line.strip() for line in open('female/female12.txt', 'r')]
-
-# Adding elements to male and female list
-male = male1 + male2 + male3 + male4 + male5 + male6 + male7 + male8 + male9 + male10 + male11 + male12
-female = female1 + female2 + female3 + female4 + female5 + female6 + female7 + female8 + female9 + female10 + female11 + female12
-blobm = list()
-sentiment_resultsm = list()
-blobf = list()
-sentiment_resultsf = list()
+      
 
 if __name__ == '__main__':
     count = 0
@@ -68,6 +33,43 @@ if __name__ == '__main__':
     with open('female.txt', 'w') as f:
         for item in female:
             f.write("%s\n" % item)
+        
+        
+    male = list()
+    female = list()
+    male1 = [line.strip() for line in open('male/male.txt', 'r')]
+    male2 = [line.strip() for line in open('male/male2.txt', 'r')]
+    male3 = [line.strip() for line in open('male/male3.txt', 'r')]
+    male4 = [line.strip() for line in open('male/male4.txt', 'r')]
+    male5 = [line.strip() for line in open('male/male5.txt', 'r')]
+    male6 = [line.strip() for line in open('male/male6.txt', 'r')]
+    male7 = [line.strip() for line in open('male/male7.txt', 'r')]
+    male8 = [line.strip() for line in open('male/male8.txt', 'r')]
+    male9 = [line.strip() for line in open('male/male9.txt', 'r')]
+    male10 = [line.strip() for line in open('male/male10.txt', 'r')]
+    male11 = [line.strip() for line in open('male/male11.txt', 'r')]
+    male12 = [line.strip() for line in open('male/male12.txt', 'r')]
+
+    female1 = [line.strip() for line in open('female/female.txt', 'r')]
+    female2 = [line.strip() for line in open('female/female2.txt', 'r')]
+    female3 = [line.strip() for line in open('female/female3.txt', 'r')]
+    female4 = [line.strip() for line in open('female/female4.txt', 'r')]
+    female5 = [line.strip() for line in open('female/female5.txt', 'r')]
+    female6 = [line.strip() for line in open('female/female6.txt', 'r')]
+    female7 = [line.strip() for line in open('female/female7.txt', 'r')]
+    female8 = [line.strip() for line in open('female/female8.txt', 'r')]
+    female9 = [line.strip() for line in open('female/female9.txt', 'r')]
+    female10 = [line.strip() for line in open('female/female10.txt', 'r')]
+    female11 = [line.strip() for line in open('female/female11.txt', 'r')]
+    female12 = [line.strip() for line in open('female/female12.txt', 'r')]
+
+# Adding elements to male and female list
+    male = male1 + male2 + male3 + male4 + male5 + male6 + male7 + male8 + male9 + male10 + male11 + male12
+    female = female1 + female2 + female3 + female4 + female5 + female6 + female7 + female8 + female9 + female10 + female11 + female12
+    blobm = list()
+    sentiment_resultsm = list()
+    blobf = list()
+    sentiment_resultsf = list()
             
             
             
